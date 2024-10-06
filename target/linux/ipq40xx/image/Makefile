@@ -12,6 +12,18 @@ define Device/Default
 	IMAGE/sysupgrade.bin/squashfs :=
 endef
 
+define Device/hiwifi_c526a
+	$(call Device/FitzImage)
+	$(call Device/UbiFit)
+	DEVICE_VENDOR := HiWiFi
+	DEVICE_MODEL := C526A
+	DEVICE_DTS := qcom-ipq4019-c526a
+	BLOCKSIZE := 128k
+	PAGESIZE := 2048
+	DEVICE_PACKAGES := ipq-wifi-hiwifi_c526a kmod-mt7615e kmod-mt7615-firmware
+endef
+TARGET_DEVICES += hiwifi_c526a
+
 include $(SUBTARGET).mk
 
 $(eval $(call BuildImage))

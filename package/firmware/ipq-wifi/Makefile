@@ -36,6 +36,7 @@ ALLWIFIBOARDS:= \
 	edimax_cax1800 \
 	glinet_gl-ax1800 \
 	glinet_gl-axt1800 \
+	hiwifi_c526a \
 	jdcloud_ax1800pro \
 	jdcloud_ax6600 \
 	linksys_mr7350 \
