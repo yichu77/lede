@@ -88,4 +88,3 @@ Signed-off-by: John Crispin <john@phrozen.org>
 +	qcom-ipq4029-mr33.dtb \
  	qcom-ipq8064-ap148.dtb \
  	qcom-ipq8064-rb3011.dtb \
- 	qcom-msm8660-surf.dtb \
