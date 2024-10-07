@@ -17,10 +17,14 @@ jobs:
 
   build_openwrt:
 
-    name: Build OpenWrt Firmware
-
     runs-on: ubuntu-latest
 
+    name: 编译 ${{matrix.target}}
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [Lede_hiwifi_c526a]  #[Lede_x86_64,Lienol_x86_64,Project_x86_64,L_hiwifi_c526a]
+        
     steps:
       - name: Space cleanup and Initialization environment
         env:
