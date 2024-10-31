@@ -6,9 +6,9 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=$(PROJECT_GIT)/project/firmware/qca-wireless.git
-PKG_SOURCE_DATE:=2024-04-16
-PKG_SOURCE_VERSION:=1d51799e6768a304da7840b8346e7487efd77f49
-PKG_MIRROR_HASH:=9cf0917532283c1a1708643022a5ed1ec4af6bb9ebaff57fc2f0f2c229f2469e
+PKG_SOURCE_DATE:=2024-10-08
+PKG_SOURCE_VERSION:=dcbab62272bf5cab2ed857bc655d240970e14f2a
+PKG_MIRROR_HASH:=23fc47a0fd9f39defe272b9f5d5b08622e7762a57bc4830965972ee89d89f481
 
 PKG_FLAGS:=nonshared
 
@@ -36,6 +36,7 @@ ALLWIFIBOARDS:= \
 	edimax_cax1800 \
 	glinet_gl-ax1800 \
 	glinet_gl-axt1800 \
+	hiwifi_c526a \
 	jdcloud_ax1800pro \
 	jdcloud_ax6600 \
 	linksys_mr7350 \
@@ -145,6 +146,7 @@ $(eval $(call generate-ipq-wifi-package,edgecore_eap102,Edgecore EAP102))
 $(eval $(call generate-ipq-wifi-package,edimax_cax1800,Edimax CAX1800))
 $(eval $(call generate-ipq-wifi-package,glinet_gl-ax1800,GL.iNet GL-AX1800))
 $(eval $(call generate-ipq-wifi-package,glinet_gl-axt1800,GL.iNet GL-AXT1800))
+$(eval $(call generate-ipq-wifi-package,hiwifi_c526a,HiWiFi C526A))
 $(eval $(call generate-ipq-wifi-package,jdcloud_ax1800pro,JDCloud AX1800 Pro))
 $(eval $(call generate-ipq-wifi-package,jdcloud_ax6600,JDCloud AX6600))
 $(eval $(call generate-ipq-wifi-package,linksys_mr7350,Linksys MR7350))
